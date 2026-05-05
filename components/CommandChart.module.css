@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 60px 1fr 44px 40px;
+  align-items: center;
+  gap: 8px;
+}
+
+.label {
+  font-size: 11px;
+  font-family: monospace;
+  color: var(--text-secondary);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.barTrack {
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+  min-width: 2px;
+}
+
+.pct {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.count {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.empty {
+  color: var(--text-muted);
+  font-size: 13px;
+  padding: 20px;
+  text-align: center;
+}
