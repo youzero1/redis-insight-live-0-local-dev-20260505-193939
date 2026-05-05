@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.svg {
+  width: 100%;
+  height: 140px;
+  display: block;
+}
+
+.current {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.current strong {
+  color: #2979ff;
+}
+
+.empty {
+  color: var(--text-muted);
+  font-size: 13px;
+  padding: 20px;
+  text-align: center;
+}
