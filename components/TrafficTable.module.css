@@ -1,0 +1,131 @@
+.tableWrapper {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 420px;
+  border-radius: 6px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.table thead tr {
+  background: var(--bg-secondary);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.table th {
+  padding: 10px 12px;
+  text-align: left;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 11px;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(46, 49, 71, 0.5);
+  vertical-align: middle;
+  color: var(--text-primary);
+}
+
+.table tbody tr:hover {
+  background: var(--bg-card-hover);
+}
+
+.errorRow td {
+  background: rgba(220, 20, 60, 0.05);
+}
+
+.errorRow:hover td {
+  background: rgba(220, 20, 60, 0.1) !important;
+}
+
+.time {
+  color: var(--text-muted) !important;
+  font-family: monospace;
+  white-space: nowrap;
+}
+
+.commandBadge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid;
+  font-weight: 600;
+  font-size: 11px;
+  font-family: monospace;
+  white-space: nowrap;
+}
+
+.key {
+  font-family: monospace;
+  color: var(--text-secondary) !important;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ip {
+  font-family: monospace;
+  color: var(--text-muted) !important;
+  white-space: nowrap;
+}
+
+.db {
+  color: var(--text-muted) !important;
+  font-size: 11px;
+}
+
+.latency {
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.latencyBar {
+  font-weight: 700;
+}
+
+.size {
+  color: var(--text-muted) !important;
+  font-family: monospace;
+  white-space: nowrap;
+}
+
+.statusOk {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(0, 200, 83, 0.12);
+  color: var(--accent-green);
+  border: 1px solid rgba(0, 200, 83, 0.25);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.statusErr {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(220, 20, 60, 0.12);
+  color: var(--accent-red);
+  border: 1px solid rgba(220, 20, 60, 0.25);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
